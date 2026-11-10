@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        /* Title styling */
+        h2 {
+            color: blue; /* Blue color for title */
+            text-align: center; /* Center the title */
+            font-family: Arial, sans-serif;
+        }
+        label{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select country--</option>
+            <option value="America">America</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="India">India</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
